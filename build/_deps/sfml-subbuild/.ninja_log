@@ -1,0 +1,21 @@
+# ninja log v5
+1	51	6984443742115785	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	6eb2bcfa5c030788
+1	51	6984443742115785	C:/Users/Cesar/Desktop/Code/congenial-octo-chainsaw/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	6eb2bcfa5c030788
+51	80463	6984444546233485	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	61823f731234cf53
+51	80463	6984444546233485	C:/Users/Cesar/Desktop/Code/congenial-octo-chainsaw/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	61823f731234cf53
+80464	81825	0	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	1930315258b1660c
+80464	81825	0	C:/Users/Cesar/Desktop/Code/congenial-octo-chainsaw/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	1930315258b1660c
+81826	81876	6984444560365225	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	9692438f62cbd1b6
+81826	81876	6984444560365225	C:/Users/Cesar/Desktop/Code/congenial-octo-chainsaw/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	9692438f62cbd1b6
+81876	81923	6984444560835192	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	ce5a57c6b1a87cbc
+81876	81923	6984444560835192	C:/Users/Cesar/Desktop/Code/congenial-octo-chainsaw/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	ce5a57c6b1a87cbc
+81924	81971	6984444561314851	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	316efcf97f247b17
+81924	81971	6984444561314851	C:/Users/Cesar/Desktop/Code/congenial-octo-chainsaw/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	316efcf97f247b17
+81971	82018	6984444561784898	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	f9c16fe26709254a
+81971	82018	6984444561784898	C:/Users/Cesar/Desktop/Code/congenial-octo-chainsaw/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	f9c16fe26709254a
+82018	82066	6984444562264832	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	5d733a542e9ebe89
+82018	82066	6984444562264832	C:/Users/Cesar/Desktop/Code/congenial-octo-chainsaw/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	5d733a542e9ebe89
+82066	82132	6984444562924837	CMakeFiles/sfml-populate-complete	c7d3f667572bb58d
+82066	82132	6984444562924837	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	c7d3f667572bb58d
+82066	82132	6984444562924837	C:/Users/Cesar/Desktop/Code/congenial-octo-chainsaw/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	c7d3f667572bb58d
+82066	82132	6984444562924837	C:/Users/Cesar/Desktop/Code/congenial-octo-chainsaw/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	c7d3f667572bb58d

@@ -6,10 +6,29 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: Project
+# Project: congenial-octo-chainsaw
 # Configurations: 
 # =============================================================================
 # =============================================================================
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__congenial-octo-chainsaw_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__congenial-octo-chainsaw_
+  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
 
 #############################################
 # Rule for running custom commands.
@@ -17,6 +36,170 @@
 rule CUSTOM_COMMAND
   command = $COMMAND
   description = $DESC
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__sfml-system_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling RC files.
+
+rule RC_COMPILER__sfml-system_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\usr\bin\windres.exe -O coff $DEFINES $INCLUDES $FLAGS $in $out
+  description = Building RC object $out
+
+
+#############################################
+# Rule for linking CXX shared library.
+
+rule CXX_SHARED_LIBRARY_LINKER__sfml-system_
+  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\c++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,2,--minor-image-version,5 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX shared library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__sfml-main_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__sfml-main_
+  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\cmake.exe -E rm -f $TARGET_FILE && C:\msys64\mingw64\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\msys64\mingw64\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__sfml-window_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling RC files.
+
+rule RC_COMPILER__sfml-window_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\usr\bin\windres.exe -O coff $DEFINES $INCLUDES $FLAGS $in $out
+  description = Building RC object $out
+
+
+#############################################
+# Rule for linking CXX shared library.
+
+rule CXX_SHARED_LIBRARY_LINKER__sfml-window_
+  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\c++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,2,--minor-image-version,5 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX shared library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__sfml-network_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling RC files.
+
+rule RC_COMPILER__sfml-network_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\usr\bin\windres.exe -O coff $DEFINES $INCLUDES $FLAGS $in $out
+  description = Building RC object $out
+
+
+#############################################
+# Rule for linking CXX shared library.
+
+rule CXX_SHARED_LIBRARY_LINKER__sfml-network_
+  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\c++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,2,--minor-image-version,5 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX shared library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__sfml-graphics_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling RC files.
+
+rule RC_COMPILER__sfml-graphics_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\usr\bin\windres.exe -O coff $DEFINES $INCLUDES $FLAGS $in $out
+  description = Building RC object $out
+
+
+#############################################
+# Rule for linking CXX shared library.
+
+rule CXX_SHARED_LIBRARY_LINKER__sfml-graphics_
+  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\c++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,2,--minor-image-version,5 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX shared library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__sfml-audio_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling RC files.
+
+rule RC_COMPILER__sfml-audio_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\msys64\usr\bin\windres.exe -O coff $DEFINES $INCLUDES $FLAGS $in $out
+  description = Building RC object $out
+
+
+#############################################
+# Rule for linking CXX shared library.
+
+rule CXX_SHARED_LIBRARY_LINKER__sfml-audio_
+  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\c++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,2,--minor-image-version,5 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX shared library $TARGET_FILE
+  restat = $RESTAT
 
 
 #############################################
